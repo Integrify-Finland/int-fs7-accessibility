@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Anisul Webpage">
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header>
       <h1>Anisul Islam</h1>
-      Full-stack trainer
-    </div>
+      <h2>Full-stack trainer</h2>
+    </header>
 
-    <div id="main">
-      <div id="about">
+    <main>
+      <section id="about">
         <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" alt="my picture"/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -34,57 +35,50 @@
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
         <button>Learn More</button>
-      </div>
+      </section>
 
-      <div id="hobby">
+      <section id="hobby">
         <h3>Hobbies</h3>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
           <li>Swimming</li>
         </ul>
-      </div>
+      </section>
 
-      <div id="contact">
-        <h2>Contact Me</h2>
+      <section id="contact">
+        <h3>Contact Me</h3>
         <form>
           <div>
-            Name:
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
-
           <div>
-            Email:
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required />
           </div>
-
           <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" aria-describedby="info" required />
+            <div id="info">(Pasword must be at least 8 character long)</div>
           </div>
-
           <div>
-            Subject:
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
             </select>
           </div>
-
           <div>
             <span>Choose Gender:</span>
-
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
-
+            <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <label for="female">Female</label>
           </div>
-
           <div>
-            Message:
-            <br />
+            <label for="message">Message:</label>
+            <br/>
             <textarea
               name="message"
               id="message"
@@ -92,28 +86,19 @@
               rows="10"
             ></textarea>
           </div>
-
-          <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
-          </div>
+            <button type="submit" aria-label="register here">Register</button>
+            <button type="reset" aria-label="reset your form">Reset</button>
         </form>
-      </div>
-
-      <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
-        <a
-          href="https://www.youtube.com/c/anisulislamrubel/channels"
-          target="_blank"
-          >YouTube</a
-        >
-        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
-          >LinkdIn</a
-        >
+      </section>
+      <footer>
+        <a href="http://stduywithanis.com" target="_blank">My Website</a>
+        <a href="https://www.youtube.com/c/anisulislamrubel/channels" target="_blank">My YouTube</a>
+        <a href="https://fi.linkedin.com/in/anisul2020" target="_blank">My LinkedIn</a>
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+        <p>Stella Denmark - N. ireland BSc. Resource mgt Web development Codeforgirls</p>
+      </footer>
+    </main>
   </body>
 </html>
 
-Stella Denmark - N. ireland BSc. Resource mgt Web development Codeforgirls
+
