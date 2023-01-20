@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Website">
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <nav id="navigation menu">
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#tutorial">Tutorials</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header id="header">
       <h1>Anisul Islam</h1>
       Full-stack trainer
-    </div>
+    </header>
 
-    <div id="main">
+    <main id="main">
       <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <h2>About Me</h2>
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" alt="image" height="250" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -37,7 +38,7 @@
       </div>
 
       <div id="hobby">
-        <h3>Hobbies</h3>
+        <h2>Hobbies</h2>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
@@ -49,23 +50,23 @@
         <h2>Contact Me</h2>
         <form>
           <div>
-            Name:
-            <input type="text" name="name" id="name" required />
+            <label for="name"> Name:</label><br>
+            <input type="text" name="name" id="name" required /><br>
           </div>
 
           <div>
-            Email:
-            <input type="email" name="email" id="email" required />
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required /><br>
           </div>
 
           <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" aria-describedby="help" required /><br>
+            <div id="password_limit">(Pasword must be at least 8 character long)</div><br>
           </div>
 
           <div>
-            Subject:
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -73,35 +74,35 @@
           </div>
 
           <div>
-            <span>Choose Gender:</span>
-
+            <span>Choose Gender:</span><br>
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
+            <label for="male">Male</label>
 
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <label for="female">Female</label><br><br>
           </div>
 
           <div>
-            Message:
+            <label for="message">Message:</label>
             <br />
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
-            ></textarea>
+            ></textarea><br><br>
           </div>
 
           <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
+            <button type="submit" value="submit">Register</button>
+            <button type="reset" value="reset">Reset</button><br><br>
           </div>
         </form>
       </div>
+    </main>
 
-      <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
+      <footer id="footer">
+        <a href="http://stduywithanis.com" target="_blank">Visit Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
           target="_blank"
@@ -111,8 +112,7 @@
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+      </footer>
   </body>
 </html>
 
