@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,24 +7,24 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <nav id="nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header id="header">
       <h1>Anisul Islam</h1>
       Full-stack trainer
-    </div>
+    </header>
 
-    <div id="main">
+    <main id="main">
       <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <h2>About Me</h2>
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" alt="a photo of Anisul"/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -33,39 +33,40 @@
           qui repellat eligendi temporibus obcaecati? Iste neque dignissimos
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
-        <button>Learn More</button>
+        <button aria-labelledby="learn more">Learn More</button>
       </div>
 
-      <div id="hobby">
-        <h3>Hobbies</h3>
+      <section id="hobby">
+        <h2>Hobbies</h2>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
           <li>Swimming</li>
         </ul>
-      </div>
+      </section>
 
-      <div id="contact">
+      <section id="contact">
         <h2>Contact Me</h2>
         <form>
           <div>
-            Name:
+            
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
 
           <div>
-            Email:
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <label for="password">Password:</label>
+            <input aria-describedby="pass-length" type="password" name="password" id="password" required />
+            <div id="pass-length">(Pasword must be at least 8 character long)</div>
           </div>
 
           <div>
-            Subject:
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -74,16 +75,19 @@
 
           <div>
             <span>Choose Gender:</span>
+            <label for="male">
+            <input type="radio" id="male" name="gender" value="male" />Male
+          </label>
+          
 
-            <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
-
-            <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <label for="female" >
+            <input type="radio" id="female" name="gender" value="female" />Female</label>
+           
           </div>
 
           <div>
-            Message:
+            
+            <label for="message">Message:</label>
             <br />
             <textarea
               name="message"
@@ -98,9 +102,9 @@
             <button type="reset">Reset</button>
           </div>
         </form>
-      </div>
+      </section>
 
-      <div id="footer">
+      <footer id="footer">
         <a href="http://stduywithanis.com" target="_blank">Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
@@ -111,8 +115,8 @@
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
 
