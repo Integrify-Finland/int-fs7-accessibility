@@ -80,10 +80,10 @@
             <span>Choose Gender:</span>
 
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
+            <lable for="male">Male</lable>
 
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <lable for="female">Female</lable>
           </div>
 
           <div>
@@ -98,8 +98,10 @@
           </div>
 
           <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
+            <button aria-lable="Register for the course" type="submit">
+              Register
+            </button>
+            <button aria-lable="Reset your choice" type="reset">Reset</button>
           </div>
         </form>
       </div>
