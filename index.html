@@ -7,21 +7,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header>
       <h1>Anisul Islam</h1>
       Full-stack trainer
-    </div>
+    </header>
 
-    <div id="main">
+    <main>
       <div id="about">
         <h3>About Me</h3>
         <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
@@ -37,7 +37,7 @@
       </div>
 
       <div id="hobby">
-        <h3>Hobbies</h3>
+        <h4>Hobbies</h4>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
@@ -49,23 +49,23 @@
         <h2>Contact Me</h2>
         <form>
           <div>
-            Name:
+            <lable for="name">Name:</lable>
             <input type="text" name="name" id="name" required />
           </div>
 
           <div>
-            Email:
+            <lable for="email">Email:</lable>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
-            Password:
+            <lable for="password">Password:</lable>
             <input type="password" name="password" id="password" required />
             <div>(Pasword must be at least 8 character long)</div>
           </div>
 
           <div>
-            Subject:
+            <lable for="subject">Subject:</lable>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -83,7 +83,7 @@
           </div>
 
           <div>
-            Message:
+            <lable for="message">Message:</lable>
             <br />
             <textarea
               name="message"
@@ -100,7 +100,7 @@
         </form>
       </div>
 
-      <div id="footer">
+      <footer>
         <a href="http://stduywithanis.com" target="_blank">Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
@@ -111,8 +111,8 @@
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
 
