@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Anisul Webpage">
+    <title>Accessibility assignment Adriano Valsangiacomo</title>
   </head>
   <body>
-    <div id="nav">
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header>
       <h1>Anisul Islam</h1>
-      Full-stack trainer
-    </div>
+      <h2>Full-stack trainer</h2>
+    </header>
 
-    <div id="main">
-      <div id="about">
+    <main>
+      <div id="about" role="">
         <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" alt="A picture of myself"/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -33,7 +34,7 @@
           qui repellat eligendi temporibus obcaecati? Iste neque dignissimos
           fugit quas amet laboriosam, suscipit iure repudiandae.
         </p>
-        <button>Learn More</button>
+        <button id="extraInformations" name="extraInformations">Learn More</button>
       </div>
 
       <div id="hobby">
@@ -48,42 +49,44 @@
       <div id="contact">
         <h2>Contact Me</h2>
         <form>
-          <div>
-            Name:
+          <fieldset>
+            <label for="name">Name: </label>
             <input type="text" name="name" id="name" required />
-          </div>
+          </fieldset>
 
-          <div>
-            Email:
+          <fieldset>
+            <label for="email">Email:</label>
             <input type="email" name="email" id="email" required />
-          </div>
+          </fieldset>
 
-          <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
-          </div>
+          <fieldset>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" aria-describedby="passwordDescription" required />
+            <div id="passwordDescription">(Pasword must be at least 8 character long)</div>
+          </fieldset>
 
-          <div>
-            Subject:
+          <fieldset>
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
             </select>
-          </div>
+          </fieldset>
 
-          <div>
-            <span>Choose Gender:</span>
+          <fieldset>
+            <legend>Choose Gender:</legend>
+            <p>
+            <input type="radio" id="male" name="gender" value="male" aria-describedby="genderMale" />
+            <label for="male">Male</label>
+            </p>
+            <p>
+            <input type="radio" id="female" name="gender" value="female" aria-describedby="genderFemale" />
+            <label for="female">Female</label>
+            </p>
+          </fieldset>
 
-            <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
-
-            <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
-          </div>
-
-          <div>
-            Message:
+          <fieldset>
+            <label for="message">Message:</label> 
             <br />
             <textarea
               name="message"
@@ -91,17 +94,17 @@
               cols="30"
               rows="10"
             ></textarea>
-          </div>
+          </fieldset>
 
-          <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
-          </div>
+          <fieldset>
+            <button type="submit" name="submit">Register</button>
+            <button type="reset" name="reset">Reset</button>
+          </fieldset>
         </form>
       </div>
-
-      <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
+    </main>
+      <footer>
+        <a href="http://stduywithanis.com" target="_blank">My learning website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
           target="_blank"
@@ -111,8 +114,7 @@
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+      </footer>
   </body>
 </html>
 
