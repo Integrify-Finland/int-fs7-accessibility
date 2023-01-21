@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Anisul portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    
+    </head>
+    <body>
+      
+    </body>
+    </html>
   </head>
   <body>
     <div id="nav">
@@ -23,8 +31,8 @@
 
     <div id="main">
       <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <h2>About Me</h2>
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" alt="author picture"/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -37,7 +45,7 @@
       </div>
 
       <div id="hobby">
-        <h3>Hobbies</h3>
+        <h2>Hobbies</h2>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
@@ -49,23 +57,28 @@
         <h2>Contact Me</h2>
         <form>
           <div>
-            Name:
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
 
+          
           <div>
-            Email:
+            <label for="email"> Email:</label>
             <input type="email" name="email" id="email" required />
           </div>
 
+          
+
           <div>
-            Password:
+            
+            <label for="password"> Password:</label>
             <input type="password" name="password" id="password" required />
             <div>(Pasword must be at least 8 character long)</div>
           </div>
 
           <div>
-            Subject:
+           
+            <label for="subject">  Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -74,16 +87,15 @@
 
           <div>
             <span>Choose Gender:</span>
-
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
-
+            <label for="male">Male</label>
+          
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <label for="female">Female</label>
           </div>
 
           <div>
-            Message:
+            <label for="message">  Message:</label>
             <br />
             <textarea
               name="message"
@@ -94,8 +106,9 @@
           </div>
 
           <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
+            <button type="submit" aria-label="register">Register</button>
+            <button type="reset" aria-label="reset">Reset</button>
+           
           </div>
         </form>
       </div>
