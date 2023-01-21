@@ -41,7 +41,7 @@
       </div>
 
       <div id="hobby">
-        <h4>Hobbies</h4>
+        <h3>Hobbies</h2>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
@@ -53,23 +53,23 @@
         <h2>Contact Me</h2>
         <form>
           <div>
-            <lable for="name">Name:</lable>
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
 
           <div>
-            <lable for="email">Email:</lable>
+            <label for="email"> Email:</label>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
-            <lable for="password">Password:</lable>
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"  aria-describedby="help" required />
+            <div id="help">(Pasword must be at least 8 character long)</div>
           </div>
 
           <div>
-            <lable for="subject">Subject:</lable>
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
