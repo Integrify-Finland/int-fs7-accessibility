@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,24 +7,28 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="nav">
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <div id="header">
+    <header>
       <h1>Anisul Islam</h1>
       Full-stack trainer
-    </div>
+    </header>
 
-    <div id="main">
+    <main>
       <div id="about">
-        <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <h2>About Me</h2>
+        <img
+          src="https://i.postimg.cc/X7YkHF12/ian.jpg"
+          height="250"
+          alt="my picture"
+        />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -37,7 +41,7 @@
       </div>
 
       <div id="hobby">
-        <h3>Hobbies</h3>
+        <h3>Hobbies</h2>
         <ul>
           <li>Playing Football</li>
           <li>Playing Badminton</li>
@@ -49,23 +53,23 @@
         <h2>Contact Me</h2>
         <form>
           <div>
-            Name:
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
 
           <div>
-            Email:
+            <label for="email"> Email:</label>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
-            Password:
-            <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"  aria-describedby="help" required />
+            <div id="help">(Pasword must be at least 8 character long)</div>
           </div>
 
           <div>
-            Subject:
+            <label for="subject">Subject:</label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -76,14 +80,14 @@
             <span>Choose Gender:</span>
 
             <input type="radio" id="male" name="gender" value="male" />
-            <span>Male</span>
+            <label for="male">Male</label>
 
             <input type="radio" id="female" name="gender" value="female" />
-            <span>Female</span>
+            <label for="female">Female</label>
           </div>
 
           <div>
-            Message:
+            <label for="message">Message:</label>
             <br />
             <textarea
               name="message"
@@ -94,13 +98,15 @@
           </div>
 
           <div>
-            <button type="submit">Register</button>
-            <button type="reset">Reset</button>
+            <button aria-label="Register for the course" type="submit">
+              Register
+            </button>
+            <button aria-label="Reset your choice" type="reset">Reset</button>
           </div>
         </form>
       </div>
 
-      <div id="footer">
+      <footer>
         <a href="http://stduywithanis.com" target="_blank">Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
@@ -111,8 +117,8 @@
           >LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
-      </div>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
 
