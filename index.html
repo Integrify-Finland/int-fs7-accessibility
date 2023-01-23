@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="web-accessibility" content="html portfolio and contact form" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Document</title>
   </head>
   <body>
@@ -62,18 +66,24 @@
           </div>
 
           <div>
+            <label>
             Email:
+            </label>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
+            <label>
             Password:
+          </label>
             <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <div><span>(Pasword must be at least 8 character long)</span></div>
           </div>
 
           <div>
+            <label>
             Subject:
+          </label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -81,7 +91,9 @@
           </div>
 
           <div>
+            <label>
             <span>Choose Gender:</span>
+          </label>
 
             <input type="radio" id="male" name="gender" value="male" />
             <span>Male</span>
@@ -91,7 +103,9 @@
           </div>
 
           <div>
+            <label>
             Message:
+          </label>
             <br />
             <textarea
               name="message"
@@ -110,14 +124,14 @@
       </div>
 
       <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
+        <a href="http://stduywithanis.com" target="_blank"><i class="fas fa-map-marker"></i>Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
           target="_blank"
-          >YouTube</a
+          ><i class="fab fa-youtube footer__icon"></i>YouTube</a
         >
         <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
-          >LinkdIn</a
+          ><i class="fab fa-linkedin footer__icon"></i>LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
       </div>
