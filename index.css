@@ -1,0 +1,155 @@
+
+body{
+    background-color: rgb(77, 158, 158);
+    text-align: center;
+}
+#nav{
+    position:fixed;
+
+}
+.menu{
+    margin-left: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);  
+}
+.menu li{
+   list-style: none; 
+}
+a{
+    text-decoration: none;
+    background-color:rgb(217, 224, 180);
+    padding: 10px 40px;
+    border: 1px solid black;
+    border-radius: 3px;  
+    margin-left: 15px;
+}
+#header{
+    padding-top: 100px;
+}
+#about,form,label{
+    display:block;
+}
+#about p{
+    box-sizing: border-box;
+    width: 500px;
+    margin-left: 450px;
+}
+.hobby_list{
+    width: 200px;
+    margin-left:610px;
+}
+.hobby_list li{
+    box-sizing: border-box;
+    width: 250px;
+    text-align: left;
+}
+form {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 640px;
+  }
+label {
+  margin-left: 50px;
+}
+input {
+  margin-top: 5px;
+}
+
+button {
+    padding: 10px 41px;
+    background-color:rgb(207, 223, 126);
+    border-radius: 3px;
+    margin-top: 5px;
+    border: 1px solid;
+}
+
+.selection{
+    border-radius: 3px;
+    height: 25px;
+    width: 150px;
+}
+#footer{
+    margin-top:30px;
+}
+
+/* //////////////////////////media qur for 1050--px//////// */
+@media all and (max-width: 390px){
+    #nav{
+        position: static;
+    }
+    #header{
+     margin-top: -100px;
+    }
+   .menu a{
+    box-sizing: border-box;
+    width: 260px;
+    display: inline-block;
+    margin-bottom: 10px;
+    }
+    .menu{
+  display: block;
+  margin-left: -0px;
+  }
+  #main{
+    width: 380px;
+  }
+
+    #about p{
+    width: 300px;
+    margin-left: 40px;
+}
+    #about button{
+    margin-left:-10px
+}
+    .hobby_list{
+    width: 250px;
+    margin-left:80px;
+}
+    .hobby_list li{
+    width: 250px;
+    text-align: left;
+}
+
+  form {
+    width: 290px;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+  }
+    label {
+    display: block;
+    margin-left: 50px;
+  }
+  input {
+    margin-top: 5px;
+  }
+  .lbl_input{
+    margin-left: 70px;
+  }
+  .input_radio_btn{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 30px 0px 0px 20px;
+   
+  }
+  .input_radio_btn span{
+    display: block;
+    margin-left: 50px;
+    margin-top: -15px;
+  }
+  .lbl_input_message{
+    margin-left: 40px;
+  }
+    #footer a{
+   display: block;
+   width: 180px;
+   margin: 0px 0px 10px 70px;
+}
+    button{
+    width: 210px;
+    margin: 5px 0px 0px 60px;
+    border: 1px solid;
+    }
+}
+/* //////////////////////////media qur for 450--px//////// */
