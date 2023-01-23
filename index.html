@@ -4,27 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="web-accessibility" content="html portfolio and contact form" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>Document</title>
   </head>
   <body>
+
+    <marquee behavior="" direction="">50% rea ongoing</marquee>
+
     <div id="nav">
+      <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#tutorial">Tutorials</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
+    </nav>
     </div>
 
     <div id="header">
+      <header>
       <h1>Anisul Islam</h1>
-      Full-stack trainer
+      <h4>Full-stack trainer</h4>
+    </header>
     </div>
 
     <div id="main">
+      <main>
       <div id="about">
         <h3>About Me</h3>
-        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" height="250" />
+        <img src="https://i.postimg.cc/X7YkHF12/ian.jpg" alt="image of author" width="250" height="250" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
           magnam autem reiciendis aliquid odio laboriosam optio quam earum non
@@ -48,24 +61,32 @@
       <div id="contact">
         <h2>Contact Me</h2>
         <form>
+          <fieldset>
           <div>
-            Name:
+            <label>
+            Name:</label>
             <input type="text" name="name" id="name" required />
           </div>
 
           <div>
+            <label>
             Email:
+            </label>
             <input type="email" name="email" id="email" required />
           </div>
 
           <div>
+            <label>
             Password:
+          </label>
             <input type="password" name="password" id="password" required />
-            <div>(Pasword must be at least 8 character long)</div>
+            <div><span>(Pasword must be at least 8 character long)</span></div>
           </div>
 
           <div>
+            <label>
             Subject:
+          </label>
             <select name="subject" id="subject">
               <option value="web">Web development</option>
               <option value="programming">Programming</option>
@@ -73,7 +94,9 @@
           </div>
 
           <div>
+            <label>
             <span>Choose Gender:</span>
+          </label>
 
             <input type="radio" id="male" name="gender" value="male" />
             <span>Male</span>
@@ -83,7 +106,9 @@
           </div>
 
           <div>
+            <label>
             Message:
+          </label>
             <br />
             <textarea
               name="message"
@@ -97,21 +122,25 @@
             <button type="submit">Register</button>
             <button type="reset">Reset</button>
           </div>
+        </fieldset>
         </form>
       </div>
 
       <div id="footer">
-        <a href="http://stduywithanis.com" target="_blank">Website</a>
+        <a href="http://stduywithanis.com" target="_blank"><i class="fas fa-map-marker"></i>Website</a>
         <a
           href="https://www.youtube.com/c/anisulislamrubel/channels"
           target="_blank"
-          >YouTube</a
+          ><i class="fab fa-youtube footer__icon"></i>YouTube</a
         >
         <a href="https://fi.linkedin.com/in/anisul2020" target="_blank"
-          >LinkdIn</a
+          ><i class="fab fa-linkedin footer__icon"></i>LinkdIn</a
         >
         <p>Developed by Anisul Islam with &hearts;</p>
       </div>
+
+    </main>
+
     </div>
   </body>
 </html>
