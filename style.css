@@ -1,0 +1,187 @@
+
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+#nav {
+    width: 100%; 
+    box-sizing: border-box;
+    background-color: #21305B; 
+    height: auto;
+    text-align: center;
+    margin: 0px 0px;
+    border: 0px;
+}
+#nav ul {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    
+}
+
+#nav ul li{
+    list-style-type: none;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 1rem;
+    width: 20%;
+    border: 0px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#header{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+#main, #about, #hobby, #contact, #footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#about h3{
+    text-align: center;
+}
+
+#about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    border-radius: 0.1em;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+
+#about button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+#about p{
+    width: 80vw;
+    margin: auto;
+    padding: 0.75rem 0.75rem;
+    text-align: justify;
+}
+#hobby h3, ul{
+    width: 80vw;
+    margin: auto;
+    padding: 0.75rem 0.75rem;
+    text-align: justify;
+}
+
+#contact h2{
+    width: 80vw;
+    margin: auto;
+    padding: 0.75rem 0.75rem;
+    text-align: justify;
+}
+
+form{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+form input, select, textarea {
+    margin: 0.7rem 0rem;
+}
+
+#footer {
+    padding: 0.5rem;
+    background-color: #21305B; 
+    text-align: center;
+}
+
+#footer p{
+    text-align: center;
+    color: white;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#contact button{
+    margin: .75rem 0.25rem;
+}
+
+
+@media screen and (max-width: 400px) {
+    #nav ul li a{
+        font-size: 0.8rem;
+    }
+    #nav ul li{
+        list-style-type: none;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        padding: 0.3rem;
+        
+    }
+    
+}
+
+@media screen and (min-width: 500px) {
+    #contact h2{
+        text-align: center;
+    }
+    form { 
+        margin: 0 auto; 
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    #contact h2{
+        text-align: center;
+    }
+    form { 
+        margin: 0 auto; 
+        width: 45vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contact h2{
+        text-align: center;
+    }
+    form { 
+        margin: 0 auto; 
+        width: 35vw;
+    }
+}
+@media screen and (min-width: 900px) {
+    #contact h2{
+        text-align: center;
+    }
+    form { 
+        margin: 0 auto; 
+        width: 30vw;
+    }
+}
+@media screen and (min-width: 1100px) {
+    #contact h2{
+        text-align: center;
+    }
+    form { 
+        margin: 0 auto; 
+        width: 20vw;
+    }
+}
